@@ -1,0 +1,11 @@
+import styled from 'styled-components';
+
+interface Style{{ properCase name }}Props {
+  theme: any;
+}
+
+const Styled{{ properCase name }} = styled.div<Style{{ properCase name }}Props>`
+  color: ${({ theme }: Style{{ properCase name }}Props) => theme.colors.primaryColor};
+`;
+
+export default Styled{{ properCase name }};

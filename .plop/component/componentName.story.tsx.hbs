@@ -1,0 +1,15 @@
+import { text, withKnobs } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import { wInfo } from 'furry-ui/lib/utils/wInfo';
+import * as React from 'react';
+import {{ properCase name }} from './{{ kebabCase name }}';
+
+const stories = storiesOf('Components/{{ properCase name }}', module);
+stories.addDecorator(withKnobs);
+
+stories.add('default', wInfo()(() => (
+    <{{ properCase name }}>
+     {text('Label', 'Default')}
+    </{{ properCase name }}>
+  )),
+);

@@ -1,0 +1,9 @@
+overwrite: true
+schema: "http://localhost:4000/graphql"
+generates:
+  src/gql/types.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      - "fragment-matcher"
