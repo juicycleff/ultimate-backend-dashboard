@@ -13,7 +13,7 @@ class Utils {
   getPageTitle = (pathname: string) => {
     // tslint:disable-next-line:no-shadowed-variable
     const route = routers.filter(route => route.path === pathname);
-    const localizedAppName = 'Dimension Four'; // L('AppName');
+    const localizedAppName = 'Ultimate React SSR Starter Kit'; // L('AppName');
     if (!route || route.length === 0) {
       return localizedAppName;
     }
