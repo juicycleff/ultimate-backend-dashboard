@@ -17,7 +17,7 @@ export const SeoUtils = ({title}: SeoUtilsProps) => {
 
   return (
     <Helmet>
-      <title>Dimension Four - IoT as a service</title>
+      <title>Ultimate React SSR Starter Kit - boilerplate</title>
       <meta
         name="title"
         content={`${translate('App.Title')} - ${title ||
@@ -26,7 +26,7 @@ export const SeoUtils = ({title}: SeoUtilsProps) => {
       <meta name="description" content={translate('App.Description')} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://dimensionfour.io/" />
+      <meta property="og:url" content="https://demo.io/" />
       <meta
         property="og:title"
         content={`${translate('App.Title')} - ${translate('App.OneLiner')}`}
@@ -38,10 +38,10 @@ export const SeoUtils = ({title}: SeoUtilsProps) => {
       />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://dimensionfour.io/" />
+      <meta property="twitter:url" content="https://demo.io/" />
       <meta
         property="twitter:title"
-        content="Dimension Four - IoT as a service"
+        content="Ultimate React SSR Starter Kit - boilerplate"
       />
       <meta
         property="twitter:description"
@@ -52,16 +52,16 @@ export const SeoUtils = ({title}: SeoUtilsProps) => {
         content={assetUrl('../static/images/logo.png')}
       />
 
-      <meta name="identifier-url" content="//dimensionfour.io" />
-      <meta name="abstract" content="Events as a service" />
+      <meta name="identifier-url" content="//demo.io" />
+      <meta name="abstract" content="Ultimate React SSR Starter Kit" />
       <meta
         name="keywords"
-        content="events, event, ticket, event ticketing, software as a service, SaaS"
+        content="demo, demo, ssr, react, ultimate"
       />
       <meta name="author" content="Rex Isaac Raphael" />
       <meta name="revisit-after" content="15" />
       <meta name="language" content="EN" />
-      <meta name="copyright" content="© 2020 DimensionFour" />
+      <meta name="copyright" content="© 2020 Ultimate React SSR Starter Kit - boilerplate" />
       <meta name="robots" content="All" />
     </Helmet>
   );
