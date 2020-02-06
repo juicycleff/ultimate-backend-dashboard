@@ -1,6 +1,6 @@
 // @flow
 
-import deepMerge from '../../utils/deep-merge';
+import {deepMerge} from '../../utils';
 import colorTokens from './light-theme/color-tokens';
 import getSemanticColors from './light-theme/color-semantic-tokens';
 import getColorComponentTokens from './light-theme/color-component-tokens';

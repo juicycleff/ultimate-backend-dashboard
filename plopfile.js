@@ -65,14 +65,16 @@ module.exports = function(plop) {
       },
     ],
     actions: ({subPath}) => {
-      let newPath = '';
+      let newPath = '../';
       if (subPath) {
+        console.log('subPath', subPath)
         const d = subPath.split('/');
         for (let i = 0; i < d.length; i++) {
           if (d[i].length > 0) {
             newPath = newPath.concat('../');
           }
         }
+        console.log('newPath', newPath);
       }
 
       return [
@@ -80,6 +82,9 @@ module.exports = function(plop) {
           type: 'add',
           path: 'src/pages{{subPath}}/{{kebabCase name}}.page.js',
           templateFile: 'plop-templates/pages/pageName.page.js.hbs',
+          data: {
+            newPath,
+          },
           abortOnFail: true,
         },
         {

@@ -1,0 +1,18 @@
+version: "3.2"
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: docker/staging/Dockerfile
+    image: "${DOCKER_REGISTRY}${DOCKER_REPO:?err}/${IMAGE:?err}:staging-${TAG:?err}"
+    restart: always
+    ports:
+      - 80:3000
+    environment:
+      - PORT=8080
+    labels:
+      kompose.service.type: loadbalancer
+      kompose.service.expose: "true"
+      kompose.image-pull-secret: "regcred"
+      kompose.image-pull-policy: "Always"

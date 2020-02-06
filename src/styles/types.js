@@ -53,5 +53,4 @@ export type ThemeT = {|
   tooltip?: {
     backgroundColor: string,
   },
-  // ^^^^^^^
 |};

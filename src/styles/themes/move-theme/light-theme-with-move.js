@@ -1,5 +1,5 @@
 // @flow
-import deepMerge from '../../../utils/deep-merge';
+import {deepMerge} from '../../../utils';
 import {LightTheme} from '../light-theme/light-theme.js';
 import {
   typography as moveTypography,
