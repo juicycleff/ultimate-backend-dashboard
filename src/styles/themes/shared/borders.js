@@ -1,0 +1,53 @@
+// @flow
+import type {BordersT} from '../types.js';
+
+// borderColor is defaulted to the light theme values.
+// Dark theme overrides the border colors.
+const borders: BordersT = {
+  border100: {
+    borderColor: 'hsla(0, 0%, 0%, 0.04)',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+  },
+  border200: {
+    borderColor: 'hsla(0, 0%, 0%, 0.08)',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+  },
+  border300: {
+    borderColor: 'hsla(0, 0%, 0%, 0.12)',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+  },
+  border400: {
+    borderColor: 'hsla(0, 0%, 0%, 0.16)',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+  },
+  border500: {
+    borderColor: 'hsla(0, 0%, 0%, 0.2)',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+  },
+  border600: {
+    borderColor: 'hsla(0, 0%, 0%, 0.24)',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+  },
+  radius100: '2px',
+  radius200: '4px',
+  radius300: '8px',
+  radius400: '12px',
+  /** Datepicker (Range), Progress Bar, Slider, Tag */
+  useRoundedCorners: true,
+  /** Button, ButtonGroup */
+  buttonBorderRadius: '0px',
+  /** Input, Select, Textarea, Checkbox */
+  inputBorderRadius: '0px',
+  /** Popover, Menu, Tooltip */
+  popoverBorderRadius: '0px',
+  /** Card, Datepicker, Modal, Toast, Notification */
+  surfaceBorderRadius: '0px',
+};
+
+export default borders;
