@@ -15,6 +15,6 @@ export const AppConsts = {
   // eslint-disable-next-line cup/no-undef
   remoteServiceBaseUrl: process.env.REACT_APP_REMOTE_SERVICE_BASE_URL,
 
-  graphqlEndpoint: 'https://admin.dimensionfour.io/graphql',
+  graphqlEndpoint: 'https://localhost/graphql',
 };
 export default AppConsts;
