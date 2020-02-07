@@ -1,4 +1,4 @@
-# ULTIMATE REACT SSR BOILERPLATE
+# ULTIMATE REACT SSR STARTERKIT
 
 Welcome to your Fusion.js application. Get started by running the application with `yarn dev` in a terminal.
 
